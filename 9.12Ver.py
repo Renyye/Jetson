@@ -122,8 +122,8 @@ def cmd_in():
     while True:
         cmd = input("请输入操作指令, 1: 手动投喂, 2: 关闭自动投喂, 3: 终止程序\n")
         if cmd == '1':
-            print("距离上次投喂猫已经过{:02d}时{:02d}分{:02d}秒".format( int((time.time()-last_catfeed_time)//3600), int((time.time()-last_catfeed_time)//60), int((time.time()-last_catfeed_time)%60)) )
-            print("距离上次投喂狗已经过{:02d}时{:02d}分{:02d}秒".format( int((time.time()-last_dogfeed_time)//3600), int((time.time()-last_dogfeed_time)//60), int((time.time()-last_dogfeed_time)%60)) )
+            print("距离上次投喂猫已经过{:02d}时{:02d}分{:02d}秒".format(int((time.time()-last_catfeed_time)//3600), int((time.time()-last_catfeed_time)//60), int((time.time()-last_catfeed_time)%60)) )
+            print("距离上次投喂狗已经过{:02d}时{:02d}分{:02d}秒".format(int((time.time()-last_dogfeed_time)//3600), int((time.time()-last_dogfeed_time)//60), int((time.time()-last_dogfeed_time)%60)) )
             op = None
             while op != '1' or op != '2' or op != '3':
                 op = input("请输入投喂对象, 1: 猫, 2: 狗, 3: 返回上级页面\n")
