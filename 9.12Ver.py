@@ -2,7 +2,6 @@ import jetson.inference
 import jetson.utils
 import RPi.GPIO as GPIO
 import time
-import datetime
 
 import shutil
 import threading
