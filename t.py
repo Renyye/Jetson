@@ -1,4 +1,5 @@
 import time
+import threading
 
 last_catfeed_time = time.time()
 time.sleep(2)
